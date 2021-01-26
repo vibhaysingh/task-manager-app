@@ -9,7 +9,7 @@
 }
 body{
     /* background-image: url('/images/darkimage.jpg'); */
-    background-image: url('./todoimage/darkimage.jpg');
+    background-image: url('../todoimage/darkimage.jpg');
     background-repeat: no-repeat;
     background-size:cover;
 }
