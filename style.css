@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Roboto","sans-serif" ;
+}
+body{
+    /* background-image: url('/images/darkimage.jpg'); */
+    background-image: url('./todoimage/darkimage.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.intro{
+    text-align: center;
+    font-size: 23px;
+    margin-top: 4%;
+    color: white;
+    margin-bottom: -6%;
+    width:550px;
+    margin-left: 32%;
+}
+.wrapper{
+    margin-top:10%;
+    margin-left: 50%;
+    width: 25%;
+    background-color:white;
+    border-radius: 5px;
+    padding: 25px;
+    height: 430px;
+    transform: translate(-50%,-5%);
+    background: rgba(0, 0, 0, 0.644);
+    box-shadow: 0px 0px 10px 0.5px white;
+
+}
+.wrapper header{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+    background-color: rgba(212, 63, 145, 0.993);
+    padding: 8px;
+    border-radius: 5px;
+    color:white;
+}
+.wrapper .inputtask{
+    display: flex;
+    height: 37px;
+    margin-bottom: 10px;
+}
+.inputtask input{
+    width: 87%;
+    border: 1px solid rgb(121, 119, 119);
+    font-size: 20px;
+    border-radius: 3px;
+    padding-left: 15px;
+    transition: all 0.4s ease-in-out;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.61);
+    color: white;
+}
+.inputtask input:focus{
+    box-shadow: 0 0 5px royalblue;
+    border: 1px solid royalblue ;
+}
+.inputtask button{
+    width: 45px;
+    border: none;
+    outline: none;
+    background-color: rgb(184, 13, 184);
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 5px;
+    opacity: 0.5;
+    pointer-events: none;
+}
+.inputtask button.active{
+    pointer-events: auto;
+    opacity: 1;
+}
+.wrapper .todo{
+ height: 215px;
+ overflow-y: auto;
+}
+.todo li {
+    list-style: none;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    border-radius: 4px;
+    background: #58575791;
+    margin-bottom: 8px;
+    padding: 0 15px;
+    cursor: default;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: large;
+    color: white;
+}
+.todo li span{
+ position: absolute;
+ right: 0px;
+ background: red;
+ color: white;
+ border-radius: 4px 4px 4px 4px;
+ width: 45px;
+ text-align: center;
+ cursor: pointer;
+ font-size: 25px;
+}
+.wrapper footer{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+footer button{
+    border: none;
+    outline: none;
+    background-color: rgb(184, 13, 184);
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 5px;
+    padding: 8px;
+    
+}
+footer>span{
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    padding: 3px;
+    border-radius: 3px;
+    background-color: rgba(212, 63, 145, 0.993);
+    color: white;
+    padding-left: 10px;
+}
+footer span i{
+    font-size: 25px;
+    padding: 2px;
+    margin-top: 1px;
+}
+footer span{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: default;
+}
+.dev{
+    text-align: center;
+   margin-top: 10px;
+} 
+.dev p{
+    font-family: 'Hachi Maru Pop', cursive;
+    color: white;
+    font-size: 20px;
+}
+@media screen and (max-width:768px)
+{
+    body{
+        background: url('/images/darkimage.jpg') no-repeat center fixed;
+    }
+    .intro{
+        margin-top: 10%;
+        font-size: 18px;
+        margin-left: 0%;
+        width: 100%;
+    }
+    .wrapper{
+        margin-top:20%;
+        width: 95%;
+    }
+    footer>span{
+        width: 60%;
+    }
+    footer button{
+        padding: 9px;
+    }
+}
