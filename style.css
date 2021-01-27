@@ -9,7 +9,7 @@
 }
 body{
     /* background-image: url('/images/darkimage.jpg'); */
-    background-image: url('../todoimage/darkimage.jpg');
+    background-image: url('./todoimage/darkimage.jpg');
     background-repeat: no-repeat;
     background-size:cover;
 }
@@ -163,7 +163,12 @@ footer span{
 @media screen and (max-width:768px)
 {
     body{
-        background: url('/images/darkimage.jpg') no-repeat center fixed;
+        /* background-image: url('./todoimage/darkimage.jpg') no-repeat center fixed; */
+        background-image: url('./todoimage/darkimage.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
     }
     .intro{
         margin-top: 10%;
