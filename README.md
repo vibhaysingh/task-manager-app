@@ -1,6 +1,6 @@
 # Task Manager App
 
-### [See Live Demo](https://vibhaysingh.github.io/task-manager-app/)
+### [To see Live Demo of this App Click here !](https://vibhaysingh.github.io/task-manager-app/)
 
 ![Task Manager App](https://drive.google.com/uc?export=view&id=1e0lb8P-SRtuSObuu576e41Y0050YfmMb)
 
